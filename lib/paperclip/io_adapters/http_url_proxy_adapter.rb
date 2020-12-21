@@ -12,7 +12,7 @@ module Paperclip
 
     def initialize(target, options = {})
       escaped = Addressable::URI.escape(target)
-      super(URI(target == URI.unescape(target) ? escaped : target), options)
+      super(URI(target == Addressable::URI.unescape(target) ? escaped : target), options)
     end
   end
 end
