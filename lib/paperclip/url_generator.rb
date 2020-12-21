@@ -1,4 +1,4 @@
-require 'uri'
+require 'addressable'
 require 'active_support/core_ext/module/delegation'
 
 module Paperclip
